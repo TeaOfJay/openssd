@@ -1,0 +1,62 @@
+#include "uart_shell.h"
+
+
+
+int initializeUart(INTC *intc, XUartPs *uart, u16 id) {
+
+	XUartPs_Config *config;
+	int status;
+
+
+	config = XUartPs_LookupConfig(id);
+
+	if(config == NULL)
+		return XST_FAILURE;
+
+
+	status = XUartPs_CfgInitialize(uart, config, config->BaseAddress);
+
+	if(status != XST_SUCCESS)
+		return XST_FAILURE;
+
+
+	status = XUartPs_SelfTest(uart);
+	if(status != XST_SUCCESS)
+		return XST_FAILURE;
+
+	XUartPs_SetHandler(uart, uartHandler, uart);
+
+	//list of interrupts
+
+	XUartPs_SetInterruptMask(uart, mask);
+
+	XUartPs_SetOperMode(UartInstPtr, XUARTPS_OPER_MODE_LOCAL_LOOP);
+	XUartPs_SetRecvTimeout(uart, 8);
+
+	//verify success
+
+	//verify interrupt
+
+	XUartPs_SetOperMode(UartInstPtr, XUARTPS_OPER_MODE_NORMAL);
+
+
+
+	return XST_SUCCESS;
+}
+
+void uartHandler( void *callbackRef, u32 event, unsigned int eventData) {
+	switch(event) {
+		case XUARTPS_EVENT_SENT_DATA:
+			break;
+		case XUARTPS_EVENT_RECV_DATA:
+			break;
+		case XUARTPS_EVENT_RECV_TOUT:
+#ifdef UART_LOG
+			xil_printf("\r\n UART timeout");
+#endif
+
+
+
+	}
+}
+

@@ -1,0 +1,35 @@
+#include "uart_shell.h"
+
+
+
+int initializeUart(INTC *intc, XUartPs *uart, u16 id) {
+
+	XUartPs_Config *config;
+	int status;
+
+
+	config = XUartPs_LookupConfig(id);
+
+	if(config == NULL)
+		return XST_FAILURE;
+
+
+	status = XUartPs_CfgInitialize(uart, config, config->BaseAddress);
+
+	if(status != XST_SUCCESS)
+		return XST_FAILURE;
+
+
+	status = XUartPs_SelfTest(uart);
+	if(status != XST_SUCCESS)
+		return XST_FAILURE;
+
+	XUartPs_SetHandler(uart, handler, uart);
+
+	//list of interrupts
+
+	XUartPs_SetInterruptMask(uart, mask);
+
+
+	return XST_SUCCESS;
+}

@@ -1,0 +1,25 @@
+11:31:48 **** Auto Build of configuration Debug for project GreedyFTLd ****
+make all 
+Building file: ../src/uart_shell.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/uart_shell.o" -I../../GreedyFTLd_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/uart_shell.d" -MT"src/uart_shell.d" -o "src/uart_shell.o" "../src/uart_shell.c"
+../src/uart_shell.c: In function 'initializeUart':
+../src/uart_shell.c:8:6: warning: unused variable 'mask' [-Wunused-variable]
+  u32 mask;
+      ^
+Finished building: ../src/uart_shell.c
+ 
+Building target: GreedyFTLd.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../GreedyFTLd_bsp/ps7_cortexa9_0/lib -o "GreedyFTLd.elf"  ./src/nvme/host_lld.o ./src/nvme/nvme_admin_cmd.o ./src/nvme/nvme_identify.o ./src/nvme/nvme_io_cmd.o ./src/nvme/nvme_main.o  ./src/fmc_driver.o ./src/init_ftl.o ./src/low_level_scheduler.o ./src/lru_buffer.o ./src/main.o ./src/page_map.o ./src/uart_shell.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: GreedyFTLd.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size GreedyFTLd.elf  |tee "GreedyFTLd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 148140	   3144	  23340	 174624	  2aa20	GreedyFTLd.elf
+Finished building: GreedyFTLd.elf.size
+ 
+
+11:31:49 Build Finished (took 526ms)
+

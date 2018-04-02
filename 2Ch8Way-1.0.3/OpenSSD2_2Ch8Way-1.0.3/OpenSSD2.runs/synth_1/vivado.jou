@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Wed Feb 14 13:32:51 2018
+# Process ID: 16439
+# Log file: /home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.runs/synth_1/OpenSSD2.vds
+# Journal file: /home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source OpenSSD2.tcl

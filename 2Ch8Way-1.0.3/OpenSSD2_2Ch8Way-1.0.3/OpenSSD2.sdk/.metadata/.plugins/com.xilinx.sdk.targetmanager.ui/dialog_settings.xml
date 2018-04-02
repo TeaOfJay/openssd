@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="OpenSSD2_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="OpenSSD2.bit" key="OpenSSD2_hw_platform_0-bitFile"/>
+	<item value="Auto Detect" key="OpenSSD2_hw_platform_0-device"/>
+	<item value="" key="OpenSSD2_hw_platform_0-bmmFile"/>
+	<item value="Local" key="OpenSSD2_hw_platform_0-target"/>
+</section>

@@ -1,0 +1,217 @@
+14:13:57 INFO  : Processing command line option -hwspec /home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.sdk/OpenSSD2.hdf.
+14:14:05 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+14:17:15 INFO  : FPGA configured successfully with bitstream "/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.sdk/OpenSSD2_hw_platform_0/OpenSSD2.bit"
+14:17:23 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Debug Operation Not Supported on the Target, Current Processor State is not "Stopped"
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1069)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:482)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:584)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:293)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+14:17:48 INFO  : ps7_init is completed.
+14:17:48 INFO  : ps7_post_config is completed.
+14:17:48 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:18:06 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:18:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:31:49 INFO  : ps7_init is completed.
+14:31:49 INFO  : ps7_post_config is completed.
+14:31:50 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:32:31 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:32:33 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:36:20 INFO  : ps7_init is completed.
+14:36:20 INFO  : ps7_post_config is completed.
+14:36:20 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:11:01 INFO  : Processing command line option -hwspec /home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.sdk/OpenSSD2.hdf.
+15:11:01 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+15:11:02 INFO  : Checking for hwspec changes in the project OpenSSD2_hw_platform_0.
+15:14:13 INFO  : FPGA configured successfully with bitstream "/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.sdk/OpenSSD2_hw_platform_0/OpenSSD2.bit"
+15:14:33 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:14:43 INFO  : Processing command line option -hwspec /home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.sdk/OpenSSD2.hdf.
+15:14:43 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+15:14:44 INFO  : Checking for hwspec changes in the project OpenSSD2_hw_platform_0.
+15:15:43 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Debug Operation Not Supported on the Target, Current Processor State is not "Stopped"
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1069)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:482)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:584)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:293)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+15:16:07 INFO  : FPGA configured successfully with bitstream "/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.sdk/OpenSSD2_hw_platform_0/OpenSSD2.bit"
+15:16:46 INFO  : ps7_init is completed.
+15:16:46 INFO  : ps7_post_config is completed.
+15:16:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:21:36 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:21:38 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:23:59 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:24:01 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:24:59 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:25:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:25:21 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:25:25 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:25:44 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:25:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:26:47 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:26:49 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:46:26 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:46:28 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:49:00 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:49:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:50:31 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:50:38 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:50:50 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:50:51 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:51:05 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:51:06 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:52:24 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:52:26 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:52:52 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:52:54 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:53:31 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:53:33 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:27:27 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+12:43:05 INFO  : Processing command line option -hwspec /home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.sdk/OpenSSD2.hdf.
+12:43:07 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+12:43:07 INFO  : Checking for hwspec changes in the project OpenSSD2_hw_platform_0.
+13:00:34 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not connected to the host
+
+13:00:34 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not connected to the host
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:372)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:378)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:287)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+13:00:43 INFO  : ps7_init is completed.
+13:00:43 INFO  : ps7_post_config is completed.
+13:00:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+13:00:47 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+13:00:49 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:18:05 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not connected to the host
+
+14:18:05 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not connected to the host
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:372)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:378)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:287)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+14:18:16 INFO  : ps7_init is completed.
+14:18:16 INFO  : ps7_post_config is completed.
+14:18:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:18:21 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:18:23 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:18:36 INFO  : FPGA configured successfully with bitstream "/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.sdk/OpenSSD2_hw_platform_0/OpenSSD2.bit"
+14:19:51 INFO  : ps7_init is completed.
+14:19:51 INFO  : ps7_post_config is completed.
+14:19:52 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:20:52 INFO  : Processing command line option -hwspec /home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.sdk/OpenSSD2.hdf.
+14:20:53 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+14:20:53 INFO  : Checking for hwspec changes in the project OpenSSD2_hw_platform_0.
+13:28:39 INFO  : Processing command line option -hwspec /home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.sdk/OpenSSD2.hdf.
+13:28:39 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+13:28:39 INFO  : Checking for hwspec changes in the project OpenSSD2_hw_platform_0.
+13:29:00 INFO  : Processing command line option -hwspec /home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.sdk/OpenSSD2.hdf.
+13:29:01 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+13:29:02 INFO  : Checking for hwspec changes in the project OpenSSD2_hw_platform_0.
+14:16:08 INFO  : ps7_init is completed.
+14:16:08 INFO  : ps7_post_config is completed.
+14:16:08 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:16:45 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:16:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:17:35 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:17:37 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:18:00 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:18:01 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:19:02 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:19:04 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:19:43 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:19:44 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:20:24 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:22:16 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:22:18 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:23:06 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:23:44 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:23:47 INFO  : Processor reset is completed for ps7_cortexa9_0
+14:28:06 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:49:32 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:50:21 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:50:40 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:50:42 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:52:28 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:52:29 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:54:08 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:54:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+15:54:42 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:54:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:01:03 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:01:05 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:03:10 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:03:12 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:05:05 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:05:07 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:06:14 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:06:17 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:09:10 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:09:13 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:09:46 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:09:49 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:11:28 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:11:31 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:12:01 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:12:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:13:08 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:13:09 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:13:47 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:13:48 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:16:18 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:16:19 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:17:00 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:17:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+16:17:43 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:17:45 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:28:19 INFO  : Processing command line option -hwspec /home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.sdk/OpenSSD2.hdf.
+11:28:20 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+11:28:20 INFO  : Checking for hwspec changes in the project OpenSSD2_hw_platform_0.
+11:29:05 INFO  : Processing command line option -hwspec /home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.sdk/OpenSSD2.hdf.
+11:29:06 INFO  : Launching XSDB server: xsdb -s /opt/Xilinx/SDK/2014.4/scripts/xsdb/xsdb/xsdb-server.tcl 2450
+11:29:06 INFO  : Checking for hwspec changes in the project OpenSSD2_hw_platform_0.

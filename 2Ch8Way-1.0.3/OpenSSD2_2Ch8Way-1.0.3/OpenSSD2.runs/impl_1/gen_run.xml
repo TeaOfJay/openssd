@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z045ffg900-3" LaunchTime="1518638124">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="OpenSSD2.vdi"/>
+  <File Type="BG-DRC" Name="OpenSSD2.drc"/>
+  <File Type="BG-BGN" Name="OpenSSD2.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="OpenSSD2.sysdef"/>
+  <File Type="BITSTR-MMI" Name="OpenSSD2.mmi"/>
+  <File Type="BITSTR-BMM" Name="OpenSSD2_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="OpenSSD2.nky"/>
+  <File Type="BITSTR-RBT" Name="OpenSSD2.rbt"/>
+  <File Type="BITSTR-MSK" Name="OpenSSD2.msk"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="OpenSSD2_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="OpenSSD2_control_sets_placed.rpt"/>
+  <File Type="PLACE-IO" Name="OpenSSD2_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="OpenSSD2_utilization_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="OpenSSD2_placed.dcp"/>
+  <File Type="PLACE-SIMILARITY" Name="OpenSSD2_incremental_reuse_placed.rpt"/>
+  <File Type="PWROPT-DRC" Name="OpenSSD2_drc_pwropted.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="OpenSSD2_utilization_placed.pb"/>
+  <File Type="PWROPT-DCP" Name="OpenSSD2_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="OpenSSD2.bin"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DRC" Name="OpenSSD2_drc_opted.rpt"/>
+  <File Type="PLACE-CLK" Name="OpenSSD2_clock_utilization_placed.rpt"/>
+  <File Type="PA-TCL" Name="OpenSSD2.tcl"/>
+  <File Type="PHYSOPT-DRC" Name="OpenSSD2_drc_physopted.rpt"/>
+  <File Type="OPT-DCP" Name="OpenSSD2_opt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="OpenSSD2_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="OpenSSD2_physopt.dcp"/>
+  <File Type="ROUTE-DCP" Name="OpenSSD2_routed.dcp"/>
+  <File Type="ROUTE-DRC" Name="OpenSSD2_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="OpenSSD2_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="OpenSSD2_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="OpenSSD2_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="OpenSSD2_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="OpenSSD2_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="OpenSSD2_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="OpenSSD2_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="OpenSSD2_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="OpenSSD2_incremental_reuse_routed.rpt"/>
+  <File Type="BG-BIT" Name="OpenSSD2.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="OpenSSD2_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="OpenSSD2_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="OpenSSD2_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="OpenSSD2_timing_summary_postroute_physopted.rpx"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/OpenSSD2/OpenSSD2.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/uProgROM_v2.0.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="OpenSSD2"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/implementation">
+    <File Path="$PSRCDIR/constrs_1/implementation/constr_nand_ch01.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/implementation/constr_nvme.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/implementation/pinmap_nand_ch0.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/implementation/pinmap_nand_ch1.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/implementation/pinmap_nand_ch2.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/implementation/pinmap_nand_ch3.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/implementation/pinmap_others.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/implementation/constr_others.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/implementation/pinmap_nand_ch4.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/implementation/pinmap_nand_ch5.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/implementation/pinmap_nand_ch6.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/implementation/pinmap_nand_ch7.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/implementation/constr_others.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Performance_ExplorePostRoutePhysOpt" Flow="Vivado Implementation 2014"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design">
+      <Option Id="Directive">0</Option>
+    </Step>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design">
+      <Option Id="Directive">0</Option>
+    </Step>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1">
+      <Option Id="Directive">0</Option>
+    </Step>
+    <Step Id="route_design">
+      <Option Id="MoreOptsStr"><![CDATA[-tns_cleanup]]></Option>
+      <Option Id="Directive">0</Option>
+    </Step>
+    <Step Id="post_route_phys_opt_design" EnableStepBool="1">
+      <Option Id="Directive">0</Option>
+    </Step>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,15 @@
+#include "uart_shell.h"
+
+
+
+int initializeUart() {
+
+	XUartPs_Config *config;
+
+
+
+	config = XUartPs_LookupConfig(DeviceId);
+
+
+	return XST_SUCCESS;
+}

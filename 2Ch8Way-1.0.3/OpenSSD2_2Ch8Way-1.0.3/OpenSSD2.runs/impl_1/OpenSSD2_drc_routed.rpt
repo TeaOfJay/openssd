@@ -1,0 +1,571 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (lin64) Build 1071353 Tue Nov 18 16:47:07 MST 2014
+| Date         : Wed Feb 14 14:06:26 2018
+| Host         : valois-Precision-Tower-7810 running 64-bit Ubuntu 16.04.3 LTS
+| Command      : report_drc
+------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+           Max violations: <unlimited>
+         Violations found: 88
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net Tiger4NSC_0/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthDownConverter/n_0_rNextState_reg[4]_i_2 is a gated clock net sourced by a combinational pin Tiger4NSC_0/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthDownConverter/rNextState_reg[4]_i_2/O, cell Tiger4NSC_0/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthDownConverter/rNextState_reg[4]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net Tiger4NSC_0/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthUpConverter/n_0_rNextState_reg[4]_i_2__0 is a gated clock net sourced by a combinational pin Tiger4NSC_0/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthUpConverter/rNextState_reg[4]_i_2__0/O, cell Tiger4NSC_0/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthUpConverter/rNextState_reg[4]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net Tiger4NSC_1/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthDownConverter/n_0_rNextState_reg[4]_i_2 is a gated clock net sourced by a combinational pin Tiger4NSC_1/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthDownConverter/rNextState_reg[4]_i_2/O, cell Tiger4NSC_1/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthDownConverter/rNextState_reg[4]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net Tiger4NSC_1/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthUpConverter/n_0_rNextState_reg[4]_i_2__0 is a gated clock net sourced by a combinational pin Tiger4NSC_1/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthUpConverter/rNextState_reg[4]_i_2__0/O, cell Tiger4NSC_1/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthUpConverter/rNextState_reg[4]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT Tiger4NSC_0/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthDownConverter/rNextState_reg[4]_i_2 is driving clock pin of 5 cells. This could lead to large hold time violations. First few involved cells are:
+    Tiger4NSC_0/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthDownConverter/rNextState_reg[4] {LDCE}
+    Tiger4NSC_0/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthDownConverter/rNextState_reg[3] {LDCE}
+    Tiger4NSC_0/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthDownConverter/rNextState_reg[2] {LDCE}
+    Tiger4NSC_0/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthDownConverter/rNextState_reg[1] {LDCE}
+    Tiger4NSC_0/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthDownConverter/rNextState_reg[0] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT Tiger4NSC_0/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthUpConverter/rNextState_reg[4]_i_2__0 is driving clock pin of 5 cells. This could lead to large hold time violations. First few involved cells are:
+    Tiger4NSC_0/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthUpConverter/rNextState_reg[4] {LDCE}
+    Tiger4NSC_0/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthUpConverter/rNextState_reg[3] {LDCE}
+    Tiger4NSC_0/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthUpConverter/rNextState_reg[2] {LDCE}
+    Tiger4NSC_0/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthUpConverter/rNextState_reg[1] {LDCE}
+    Tiger4NSC_0/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthUpConverter/rNextState_reg[0] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#3 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT Tiger4NSC_1/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthDownConverter/rNextState_reg[4]_i_2 is driving clock pin of 5 cells. This could lead to large hold time violations. First few involved cells are:
+    Tiger4NSC_1/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthDownConverter/rNextState_reg[4] {LDCE}
+    Tiger4NSC_1/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthDownConverter/rNextState_reg[3] {LDCE}
+    Tiger4NSC_1/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthDownConverter/rNextState_reg[2] {LDCE}
+    Tiger4NSC_1/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthDownConverter/rNextState_reg[1] {LDCE}
+    Tiger4NSC_1/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthDownConverter/rNextState_reg[0] {LDCE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#4 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT Tiger4NSC_1/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthUpConverter/rNextState_reg[4]_i_2__0 is driving clock pin of 5 cells. This could lead to large hold time violations. First few involved cells are:
+    Tiger4NSC_1/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthUpConverter/rNextState_reg[4] {LDCE}
+    Tiger4NSC_1/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthUpConverter/rNextState_reg[3] {LDCE}
+    Tiger4NSC_1/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthUpConverter/rNextState_reg[2] {LDCE}
+    Tiger4NSC_1/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthUpConverter/rNextState_reg[1] {LDCE}
+    Tiger4NSC_1/inst/Inst_BCHEncoder/Inst_BCHEncoderDataChannel/Inst_WidthUpConverter/rNextState_reg[0] {LDCE}
+
+Related violations: <none>
+
+PLIO-7#1 Warning
+Placement Constraints Check for IO constraints  
+An IO Bus FIXED_IO_mio[53:0] with more than one IO standard is found. Components associated with this bus are:  FIXED_IO_mio[53] of IOStandard LVCMOS18; FIXED_IO_mio[52] of IOStandard LVCMOS18; FIXED_IO_mio[51] of IOStandard LVCMOS18; FIXED_IO_mio[50] of IOStandard LVCMOS18; FIXED_IO_mio[49] of IOStandard LVCMOS18; FIXED_IO_mio[48] of IOStandard LVCMOS18; FIXED_IO_mio[47] of IOStandard LVCMOS18; FIXED_IO_mio[46] of IOStandard LVCMOS18; FIXED_IO_mio[45] of IOStandard LVCMOS18; FIXED_IO_mio[44] of IOStandard LVCMOS18; FIXED_IO_mio[43] of IOStandard LVCMOS18; FIXED_IO_mio[42] of IOStandard LVCMOS18; FIXED_IO_mio[41] of IOStandard LVCMOS18; FIXED_IO_mio[40] of IOStandard LVCMOS18; FIXED_IO_mio[39] of IOStandard LVCMOS18; FIXED_IO_mio[38] of IOStandard LVCMOS18; FIXED_IO_mio[37] of IOStandard LVCMOS18; FIXED_IO_mio[36] of IOStandard LVCMOS18; FIXED_IO_mio[35] of IOStandard LVCMOS18; FIXED_IO_mio[34] of IOStandard LVCMOS18; FIXED_IO_mio[33] of IOStandard LVCMOS18; FIXED_IO_mio[32] of IOStandard LVCMOS18; FIXED_IO_mio[31] of IOStandard LVCMOS18; FIXED_IO_mio[30] of IOStandard LVCMOS18; FIXED_IO_mio[29] of IOStandard LVCMOS18; FIXED_IO_mio[28] of IOStandard LVCMOS18; FIXED_IO_mio[27] of IOStandard HSTL_I_18; FIXED_IO_mio[26] of IOStandard HSTL_I_18; FIXED_IO_mio[25] of IOStandard HSTL_I_18; FIXED_IO_mio[24] of IOStandard HSTL_I_18; FIXED_IO_mio[23] of IOStandard HSTL_I_18; FIXED_IO_mio[22] of IOStandard HSTL_I_18; FIXED_IO_mio[21] of IOStandard HSTL_I_18; FIXED_IO_mio[20] of IOStandard HSTL_I_18; FIXED_IO_mio[19] of IOStandard HSTL_I_18; FIXED_IO_mio[18] of IOStandard HSTL_I_18; FIXED_IO_mio[17] of IOStandard HSTL_I_18; FIXED_IO_mio[16] of IOStandard HSTL_I_18; FIXED_IO_mio[15] of IOStandard LVCMOS18; FIXED_IO_mio[14] of IOStandard LVCMOS18; FIXED_IO_mio[13] of IOStandard LVCMOS18; FIXED_IO_mio[12] of IOStandard LVCMOS18; FIXED_IO_mio[11] of IOStandard LVCMOS18; FIXED_IO_mio[10] of IOStandard LVCMOS18; FIXED_IO_mio[9] of IOStandard LVCMOS18; FIXED_IO_mio[8] of IOStandard LVCMOS18; FIXED_IO_mio[7] of IOStandard LVCMOS18; FIXED_IO_mio[6] of IOStandard LVCMOS18; FIXED_IO_mio[5] of IOStandard LVCMOS18; FIXED_IO_mio[4] of IOStandard LVCMOS18; FIXED_IO_mio[3] of IOStandard LVCMOS18; FIXED_IO_mio[2] of IOStandard LVCMOS18; FIXED_IO_mio[1] of IOStandard LVCMOS18; FIXED_IO_mio[0] of IOStandard LVCMOS18;
+Related violations: <none>
+
+REQP-1580#1 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[0].Inst_CEOSERDES. This can result in corrupted data. The V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[0].Inst_CEOSERDES/CLK / V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[0].Inst_CEOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#2 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[1].Inst_CEOSERDES. This can result in corrupted data. The V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[1].Inst_CEOSERDES/CLK / V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[1].Inst_CEOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#3 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[2].Inst_CEOSERDES. This can result in corrupted data. The V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[2].Inst_CEOSERDES/CLK / V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[2].Inst_CEOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#4 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[3].Inst_CEOSERDES. This can result in corrupted data. The V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[3].Inst_CEOSERDES/CLK / V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[3].Inst_CEOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#5 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[4].Inst_CEOSERDES. This can result in corrupted data. The V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[4].Inst_CEOSERDES/CLK / V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[4].Inst_CEOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#6 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[5].Inst_CEOSERDES. This can result in corrupted data. The V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[5].Inst_CEOSERDES/CLK / V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[5].Inst_CEOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#7 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[6].Inst_CEOSERDES. This can result in corrupted data. The V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[6].Inst_CEOSERDES/CLK / V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[6].Inst_CEOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#8 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[7].Inst_CEOSERDES. This can result in corrupted data. The V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[7].Inst_CEOSERDES/CLK / V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[7].Inst_CEOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#9 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[0].Inst_DQOSERDES. This can result in corrupted data. The V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[0].Inst_DQOSERDES/CLK / V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[0].Inst_DQOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#10 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[1].Inst_DQOSERDES. This can result in corrupted data. The V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[1].Inst_DQOSERDES/CLK / V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[1].Inst_DQOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#11 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[2].Inst_DQOSERDES. This can result in corrupted data. The V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[2].Inst_DQOSERDES/CLK / V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[2].Inst_DQOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#12 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[3].Inst_DQOSERDES. This can result in corrupted data. The V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[3].Inst_DQOSERDES/CLK / V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[3].Inst_DQOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#13 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[4].Inst_DQOSERDES. This can result in corrupted data. The V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[4].Inst_DQOSERDES/CLK / V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[4].Inst_DQOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#14 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[5].Inst_DQOSERDES. This can result in corrupted data. The V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[5].Inst_DQOSERDES/CLK / V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[5].Inst_DQOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#15 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[6].Inst_DQOSERDES. This can result in corrupted data. The V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[6].Inst_DQOSERDES/CLK / V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[6].Inst_DQOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#16 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[7].Inst_DQOSERDES. This can result in corrupted data. The V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[7].Inst_DQOSERDES/CLK / V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[7].Inst_DQOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#17 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_ALEOSERDES. This can result in corrupted data. The V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_ALEOSERDES/CLK / V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_ALEOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#18 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_CLEOSERDES. This can result in corrupted data. The V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_CLEOSERDES/CLK / V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_CLEOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#19 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_DQSOSERDES. This can result in corrupted data. The V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_DQSOSERDES/CLK / V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_DQSOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#20 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_REOSERDES. This can result in corrupted data. The V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_REOSERDES/CLK / V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_REOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#21 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_WEOSERDES. This can result in corrupted data. The V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_WEOSERDES/CLK / V2NFC100DDR_0/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_WEOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#22 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[0].Inst_CEOSERDES. This can result in corrupted data. The V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[0].Inst_CEOSERDES/CLK / V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[0].Inst_CEOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#23 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[1].Inst_CEOSERDES. This can result in corrupted data. The V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[1].Inst_CEOSERDES/CLK / V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[1].Inst_CEOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#24 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[2].Inst_CEOSERDES. This can result in corrupted data. The V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[2].Inst_CEOSERDES/CLK / V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[2].Inst_CEOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#25 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[3].Inst_CEOSERDES. This can result in corrupted data. The V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[3].Inst_CEOSERDES/CLK / V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[3].Inst_CEOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#26 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[4].Inst_CEOSERDES. This can result in corrupted data. The V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[4].Inst_CEOSERDES/CLK / V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[4].Inst_CEOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#27 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[5].Inst_CEOSERDES. This can result in corrupted data. The V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[5].Inst_CEOSERDES/CLK / V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[5].Inst_CEOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#28 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[6].Inst_CEOSERDES. This can result in corrupted data. The V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[6].Inst_CEOSERDES/CLK / V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[6].Inst_CEOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#29 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[7].Inst_CEOSERDES. This can result in corrupted data. The V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[7].Inst_CEOSERDES/CLK / V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/CEOSERDESBits[7].Inst_CEOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#30 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[0].Inst_DQOSERDES. This can result in corrupted data. The V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[0].Inst_DQOSERDES/CLK / V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[0].Inst_DQOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#31 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[1].Inst_DQOSERDES. This can result in corrupted data. The V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[1].Inst_DQOSERDES/CLK / V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[1].Inst_DQOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#32 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[2].Inst_DQOSERDES. This can result in corrupted data. The V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[2].Inst_DQOSERDES/CLK / V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[2].Inst_DQOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#33 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[3].Inst_DQOSERDES. This can result in corrupted data. The V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[3].Inst_DQOSERDES/CLK / V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[3].Inst_DQOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#34 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[4].Inst_DQOSERDES. This can result in corrupted data. The V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[4].Inst_DQOSERDES/CLK / V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[4].Inst_DQOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#35 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[5].Inst_DQOSERDES. This can result in corrupted data. The V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[5].Inst_DQOSERDES/CLK / V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[5].Inst_DQOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#36 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[6].Inst_DQOSERDES. This can result in corrupted data. The V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[6].Inst_DQOSERDES/CLK / V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[6].Inst_DQOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#37 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[7].Inst_DQOSERDES. This can result in corrupted data. The V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[7].Inst_DQOSERDES/CLK / V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/DQOSERDESBits[7].Inst_DQOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#38 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_ALEOSERDES. This can result in corrupted data. The V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_ALEOSERDES/CLK / V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_ALEOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#39 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_CLEOSERDES. This can result in corrupted data. The V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_CLEOSERDES/CLK / V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_CLEOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#40 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_DQSOSERDES. This can result in corrupted data. The V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_DQSOSERDES/CLK / V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_DQSOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#41 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_REOSERDES. This can result in corrupted data. The V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_REOSERDES/CLK / V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_REOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+REQP-1580#42 Warning
+Phase alignment  
+Unsupported clocking topology used for  V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_WEOSERDES. This can result in corrupted data. The V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_WEOSERDES/CLK / V2NFC100DDR_1/inst/Inst_NPhy_Toggle_Top/Inst_NPhy_Toggle_Physical_Output/Inst_WEOSERDES/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship OSERDESE2. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+Related violations: <none>
+
+XDCH-2#1 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'IO_NAND_CH0_DQ[0]' relative to clock CH0_DQSToNAND_ClockOut for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH0_DQSToNAND_ClockOut] -clock_fall -add_delay 1.000 [get_ports {IO_NAND_CH0_DQ[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 76)
+Related violations: <none>
+
+XDCH-2#2 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'IO_NAND_CH0_DQ[1]' relative to clock CH0_DQSToNAND_ClockOut for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH0_DQSToNAND_ClockOut] -clock_fall -add_delay 1.000 [get_ports {IO_NAND_CH0_DQ[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 76)
+Related violations: <none>
+
+XDCH-2#3 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'IO_NAND_CH0_DQ[2]' relative to clock CH0_DQSToNAND_ClockOut for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH0_DQSToNAND_ClockOut] -clock_fall -add_delay 1.000 [get_ports {IO_NAND_CH0_DQ[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 76)
+Related violations: <none>
+
+XDCH-2#4 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'IO_NAND_CH0_DQ[3]' relative to clock CH0_DQSToNAND_ClockOut for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH0_DQSToNAND_ClockOut] -clock_fall -add_delay 1.000 [get_ports {IO_NAND_CH0_DQ[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 76)
+Related violations: <none>
+
+XDCH-2#5 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'IO_NAND_CH0_DQ[4]' relative to clock CH0_DQSToNAND_ClockOut for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH0_DQSToNAND_ClockOut] -clock_fall -add_delay 1.000 [get_ports {IO_NAND_CH0_DQ[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 76)
+Related violations: <none>
+
+XDCH-2#6 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'IO_NAND_CH0_DQ[5]' relative to clock CH0_DQSToNAND_ClockOut for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH0_DQSToNAND_ClockOut] -clock_fall -add_delay 1.000 [get_ports {IO_NAND_CH0_DQ[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 76)
+Related violations: <none>
+
+XDCH-2#7 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'IO_NAND_CH0_DQ[6]' relative to clock CH0_DQSToNAND_ClockOut for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH0_DQSToNAND_ClockOut] -clock_fall -add_delay 1.000 [get_ports {IO_NAND_CH0_DQ[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 76)
+Related violations: <none>
+
+XDCH-2#8 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'IO_NAND_CH0_DQ[7]' relative to clock CH0_DQSToNAND_ClockOut for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH0_DQSToNAND_ClockOut] -clock_fall -add_delay 1.000 [get_ports {IO_NAND_CH0_DQ[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 76)
+Related violations: <none>
+
+XDCH-2#9 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'IO_NAND_CH1_DQ[0]' relative to clock CH1_DQSToNAND_ClockOut for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH1_DQSToNAND_ClockOut] -clock_fall -add_delay 1.000 [get_ports {IO_NAND_CH1_DQ[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 120)
+Related violations: <none>
+
+XDCH-2#10 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'IO_NAND_CH1_DQ[1]' relative to clock CH1_DQSToNAND_ClockOut for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH1_DQSToNAND_ClockOut] -clock_fall -add_delay 1.000 [get_ports {IO_NAND_CH1_DQ[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 120)
+Related violations: <none>
+
+XDCH-2#11 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'IO_NAND_CH1_DQ[2]' relative to clock CH1_DQSToNAND_ClockOut for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH1_DQSToNAND_ClockOut] -clock_fall -add_delay 1.000 [get_ports {IO_NAND_CH1_DQ[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 120)
+Related violations: <none>
+
+XDCH-2#12 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'IO_NAND_CH1_DQ[3]' relative to clock CH1_DQSToNAND_ClockOut for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH1_DQSToNAND_ClockOut] -clock_fall -add_delay 1.000 [get_ports {IO_NAND_CH1_DQ[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 120)
+Related violations: <none>
+
+XDCH-2#13 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'IO_NAND_CH1_DQ[4]' relative to clock CH1_DQSToNAND_ClockOut for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH1_DQSToNAND_ClockOut] -clock_fall -add_delay 1.000 [get_ports {IO_NAND_CH1_DQ[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 120)
+Related violations: <none>
+
+XDCH-2#14 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'IO_NAND_CH1_DQ[5]' relative to clock CH1_DQSToNAND_ClockOut for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH1_DQSToNAND_ClockOut] -clock_fall -add_delay 1.000 [get_ports {IO_NAND_CH1_DQ[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 120)
+Related violations: <none>
+
+XDCH-2#15 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'IO_NAND_CH1_DQ[6]' relative to clock CH1_DQSToNAND_ClockOut for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH1_DQSToNAND_ClockOut] -clock_fall -add_delay 1.000 [get_ports {IO_NAND_CH1_DQ[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 120)
+Related violations: <none>
+
+XDCH-2#16 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'IO_NAND_CH1_DQ[7]' relative to clock CH1_DQSToNAND_ClockOut for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH1_DQSToNAND_ClockOut] -clock_fall -add_delay 1.000 [get_ports {IO_NAND_CH1_DQ[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 120)
+Related violations: <none>
+
+XDCH-2#17 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'O_NAND_CH0_ALE' relative to clock CH0_WEToNAND_Clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH0_WEToNAND_Clock] -clock_fall -add_delay 1.000 [get_ports O_NAND_CH0_ALE]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 81)
+Related violations: <none>
+
+XDCH-2#18 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'O_NAND_CH0_CE[0]' relative to clock CH0_WEToNAND_Clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH0_WEToNAND_Clock] 1.000 [get_ports {O_NAND_CH0_CE[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 79)
+Related violations: <none>
+
+XDCH-2#19 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'O_NAND_CH0_CE[1]' relative to clock CH0_WEToNAND_Clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH0_WEToNAND_Clock] 1.000 [get_ports {O_NAND_CH0_CE[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 79)
+Related violations: <none>
+
+XDCH-2#20 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'O_NAND_CH0_CE[2]' relative to clock CH0_WEToNAND_Clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH0_WEToNAND_Clock] 1.000 [get_ports {O_NAND_CH0_CE[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 79)
+Related violations: <none>
+
+XDCH-2#21 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'O_NAND_CH0_CE[3]' relative to clock CH0_WEToNAND_Clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH0_WEToNAND_Clock] 1.000 [get_ports {O_NAND_CH0_CE[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 79)
+Related violations: <none>
+
+XDCH-2#22 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'O_NAND_CH0_CE[4]' relative to clock CH0_WEToNAND_Clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH0_WEToNAND_Clock] 1.000 [get_ports {O_NAND_CH0_CE[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 79)
+Related violations: <none>
+
+XDCH-2#23 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'O_NAND_CH0_CE[5]' relative to clock CH0_WEToNAND_Clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH0_WEToNAND_Clock] 1.000 [get_ports {O_NAND_CH0_CE[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 79)
+Related violations: <none>
+
+XDCH-2#24 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'O_NAND_CH0_CE[6]' relative to clock CH0_WEToNAND_Clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH0_WEToNAND_Clock] 1.000 [get_ports {O_NAND_CH0_CE[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 79)
+Related violations: <none>
+
+XDCH-2#25 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'O_NAND_CH0_CE[7]' relative to clock CH0_WEToNAND_Clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH0_WEToNAND_Clock] 1.000 [get_ports {O_NAND_CH0_CE[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 79)
+Related violations: <none>
+
+XDCH-2#26 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'O_NAND_CH0_CLE' relative to clock CH0_WEToNAND_Clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH0_WEToNAND_Clock] -clock_fall -add_delay 1.000 [get_ports O_NAND_CH0_CLE]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 83)
+Related violations: <none>
+
+XDCH-2#27 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'O_NAND_CH1_ALE' relative to clock CH1_WEToNAND_Clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH1_WEToNAND_Clock] -clock_fall -add_delay 1.000 [get_ports O_NAND_CH1_ALE]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 125)
+Related violations: <none>
+
+XDCH-2#28 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'O_NAND_CH1_CE[0]' relative to clock CH1_WEToNAND_Clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH1_WEToNAND_Clock] 1.000 [get_ports {O_NAND_CH1_CE[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 123)
+Related violations: <none>
+
+XDCH-2#29 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'O_NAND_CH1_CE[1]' relative to clock CH1_WEToNAND_Clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH1_WEToNAND_Clock] 1.000 [get_ports {O_NAND_CH1_CE[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 123)
+Related violations: <none>
+
+XDCH-2#30 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'O_NAND_CH1_CE[2]' relative to clock CH1_WEToNAND_Clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH1_WEToNAND_Clock] 1.000 [get_ports {O_NAND_CH1_CE[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 123)
+Related violations: <none>
+
+XDCH-2#31 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'O_NAND_CH1_CE[3]' relative to clock CH1_WEToNAND_Clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH1_WEToNAND_Clock] 1.000 [get_ports {O_NAND_CH1_CE[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 123)
+Related violations: <none>
+
+XDCH-2#32 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'O_NAND_CH1_CE[4]' relative to clock CH1_WEToNAND_Clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH1_WEToNAND_Clock] 1.000 [get_ports {O_NAND_CH1_CE[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 123)
+Related violations: <none>
+
+XDCH-2#33 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'O_NAND_CH1_CE[5]' relative to clock CH1_WEToNAND_Clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH1_WEToNAND_Clock] 1.000 [get_ports {O_NAND_CH1_CE[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 123)
+Related violations: <none>
+
+XDCH-2#34 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'O_NAND_CH1_CE[6]' relative to clock CH1_WEToNAND_Clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH1_WEToNAND_Clock] 1.000 [get_ports {O_NAND_CH1_CE[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 123)
+Related violations: <none>
+
+XDCH-2#35 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'O_NAND_CH1_CE[7]' relative to clock CH1_WEToNAND_Clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH1_WEToNAND_Clock] 1.000 [get_ports {O_NAND_CH1_CE[*]}]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 123)
+Related violations: <none>
+
+XDCH-2#36 Warning
+Same min and max delay values on IO port  
+The same output delay of 1.000 ns has been defined on port 'O_NAND_CH1_CLE' relative to clock CH1_WEToNAND_Clock for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks CH1_WEToNAND_Clock] -clock_fall -add_delay 1.000 [get_ports O_NAND_CH1_CLE]
+/home/valois/Desktop/home/git/predefined/2Ch8Way-1.0.3/OpenSSD2_2Ch8Way-1.0.3/OpenSSD2.srcs/constrs_1/implementation/constr_nand_ch01.xdc (Line: 127)
+Related violations: <none>
+
+

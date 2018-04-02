@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Project Version="1" Minor="0">
+	<BUILD_NUMBER Name="1071353"/>
+	<FULL_BUILD Name="SW Build 1071353 on Tue Nov 18 16:47:07 MST 2014"/>
+	<MODE Name="Post-Bitstream"/>
+	<SYSTEMINFO BOARD="" ARCH="zynq" PACKAGE="ffg900" DEVICE="7z045" SPEED="-3" LUT="" FF="" BRAM="" DSP=""/>
+	<HIERARCHY Name="OpenSSD2"/>
+	<File Type="HW_HANDOFF" Name="OpenSSD2.hwh" ModTime="1518633180"/>
+	<File Type="PS_FSBL_INIT" Name="ps7_init.c" ModTime="1518633178"/>
+	<File Type="PS_FSBL_INIT" Name="ps7_init.h" ModTime="1518633178"/>
+	<File Type="PS_FSBL_INIT_GPL" Name="ps7_init_gpl.c" ModTime="1518633178"/>
+	<File Type="PS_FSBL_INIT_GPL" Name="ps7_init_gpl.h" ModTime="1518633178"/>
+	<File Type="PS_XMD_INIT" Name="ps7_init.tcl" ModTime="1518633178"/>
+	<File Type="PS_INIT_HELP" Name="ps7_init.html" ModTime="1518633180"/>
+	<File Type="BIT" Name="OpenSSD2.bit" ModTime="1518639001"/>
+	<File Type="BD_TCL" Name="OpenSSD2_bd.tcl" ModTime="1518633180"/>
+	<USEDRESOURCES LUT="" FF="" BRAM="" DSP=""/>
+</Project>
+
